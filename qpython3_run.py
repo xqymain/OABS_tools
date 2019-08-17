@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 # -*- coding: utf-8 -
 
 # 这里需修改 config_name 为你的配置文件名称，如
@@ -21,6 +21,6 @@ except:
     pip.main(['install', 'PyYAML'])
 
 if __name__ == "__main__":
-    from bjguahao import Guahao
+    from OABS_tools import Guahao
     guahao = Guahao(config_path)
     guahao.run()

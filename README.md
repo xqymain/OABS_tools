@@ -1,20 +1,24 @@
-# 北京市预约挂号统一平台脚本
+﻿# 北京市预约挂号统一平台脚本
 
 ![](https://img.shields.io/badge/Language-Python-007fc0.svg)
 ![](https://img.shields.io/badge/license-GPLv3-000000.svg)
-![](https://img.shields.io/badge/made%20with-%3C3-red.svg)
+![](https://img.shields.io/badge/python-3.6-blue)
 
 Copyright (C) 2017
 
 **目前稳定版已经发布，欢迎吐槽和试用**
 
-* 本程序用于 [北京市预约挂号统一平台](http://www.bjguahao.gov.cn/) 的挂号，只支持北京地区医院的挂号。
+* 本程序用于 [北京市预约挂号统一平台](http://www.114yygh.com) 的挂号，只支持北京地区医院的挂号。
 * 挂号是刚需。帝都有些医院号源紧张，放号瞬间被秒杀一空，遂产生了撸一脚本挂号的念头。说干就干，简单的分析和调试后于 16 年 8 月份左右产出第一版，顺利挂上了XXX院运动医学科的号。很开心。
 * 17 年 2 月底的时候，朋友也需要挂一个号，脚本给他改了改，貌似删了重写的？没有仔细看。经过精心的分析和调试，挂了一个专家号。很开心。
 * 17 年 3 月 8 号，两位热心网友github上发起issues，提出反馈，让我很意外。本来想着这脚本自己写着用就可以了。接到反馈后觉得可以写成一个成熟的软件了。两位热心网友也主动提出改进代码的愿望。很开心。
 * __还看什么看，来贡献代码__ ;-)
 
 `2017-03-08 17:12:20 breaker`
+
+* 鉴于breaker洗白上岸，又对此工具有刚需，xqymain维护此脚本至可用
+
+`2019-08-17 11:04:27 xqymain`
 
 ## 环境
 
@@ -26,8 +30,8 @@ Copyright (C) 2017
 1. 安装依赖库，例如：``` pip install --user -r requirements.txt ```
 2. 修改配置文件
 3. 运行命令：
-    - 默认用法： ```python bjguahao.py```
-    - 指定配置： ```python bjguahao.py -c your-conf.yaml```
+    - 默认用法： ```python register_main.py```
+    - 指定配置： ```python register_main.py -c your-conf.yaml```
 
 **Android QPython3 使用方法**
 1. 安装 [QPython3](https://play.google.com/store/apps/details?id=org.qpython.qpy3) 和 [QPython](https://play.google.com/store/apps/details?id=org.qpython.qpy)

@@ -1,4 +1,4 @@
-import re
+﻿import re
 import datetime
 import logging
 import time
@@ -21,7 +21,7 @@ class QPython3(object):
         code = '000000'
         retry = 600
         # loop
-        logging.debug("监控短信中……")
+        logging.debug("嗅探短信中……")
         while retry > 0:
             retry -= 1
             # 检查 SMS

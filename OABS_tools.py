@@ -266,7 +266,7 @@ class Guahao(object):
         duty_source_id = str(doctor['dutySourceId'])
         hospital_id = self.config.hospital_id
         department_id = self.config.department_id
-        patient_id = self.config.department_id.patient_id
+        patient_id = 241990858
         hospital_card_id = self.config.hospital_card_id
         medicare_card_id = self.config.medicare_card_id
         reimbursement_type = self.config.reimbursement_type
