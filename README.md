@@ -4,9 +4,12 @@
 ![](https://img.shields.io/badge/license-GPLv3-000000.svg)
 ![](https://img.shields.io/badge/python-3.6-blue)
 
-Copyright (C) 2017
+Copyright (C) 2017 breaker
+
+Copyright (C) 2019 xqymain
 
 **目前稳定版已经发布，欢迎吐槽和试用**
+**实测QPython的验证码读取存在问题，抽空填坑叭**
 
 * 本程序用于 [北京市预约挂号统一平台](http://www.114yygh.com) 的挂号，只支持北京地区医院的挂号。
 * 挂号是刚需。帝都有些医院号源紧张，放号瞬间被秒杀一空，遂产生了撸一脚本挂号的念头。说干就干，简单的分析和调试后于 16 年 8 月份左右产出第一版，顺利挂上了XXX院运动医学科的号。很开心。
@@ -17,6 +20,10 @@ Copyright (C) 2017
 `2017-03-08 17:12:20 breaker`
 
 * 鉴于breaker洗白上岸，又对此工具有刚需，xqymain维护此脚本至可用
+* 因故要去帝都某医院瞧病，因为医院特殊规定只能挂特定两个门诊，都是10秒内结束战斗，恰遇该项目，遂维护。简单维护后恢复了挂号的基本功能。
+* 19 年 8 月 21 号，成功挂到了月底某院儿童专家的号，很幸运,在此鸣谢breaker。
+* 已知BUG：QPython读取验证码存在问题
+* 未知功能：Mac下读取iOS短信验证码
 
 `2019-08-17 11:04:27 xqymain`
 
@@ -79,7 +86,7 @@ departmentId: "200002248"
 
 # 关于如何获取 hospitalId 和 departmentId
 # 1. 打开挂号页面
-# 2. 假设地址栏中地址是 http://www.bjguahao.gov.cn/dpt/appoint/162-200002248.htm
+# 2. 假设地址栏中地址是 http://www.114yygh.com/dpt/appoint/162-200002248.htm
 # 3. 其中 162 是 hospitalId
 # 4. 其中 200002248 是 departmentId
 
