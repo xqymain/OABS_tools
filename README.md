@@ -67,51 +67,62 @@ Copyright (C) 2019 xqymain
 默认配置文件 `config.yaml`
 
 ```yaml
-
-# username: 您的的用户名(一般是手机号码)
+    
+# username: 您的的用户名 (一般是手机号码)
 username: "13888888888"
 
 # password: 密码
-password: "*****"
+  password: "*****"
 
 # date: 挂号日期
-date: "2018-01-01"
+  date: "2018-01-01"
 
 
-# hospitalId: 医院id
+# hospitalId: 医院 id
 hospitalId: "162"
 
-# departmentId: 科室id
+# departmentId: 科室 id
 departmentId: "200002248"
 
 # 关于如何获取 hospitalId 和 departmentId
 # 1. 打开挂号页面
-# 2. 假设地址栏中地址是 http://www.114yygh.com/dpt/appoint/162-200002248.htm
+# 2. 假设地址栏中地址是 http://www.bjguahao.gov.cn/dpt/appoint/162-200002248.htm
 # 3. 其中 162 是 hospitalId
 # 4. 其中 200002248 是 departmentId
 
 
-# 需要挂早上的号请填写1  需要挂下午的号请填写2
+# 需要挂早上的号请填写 1  需要挂下午的号请填写 2
 dutyCode: "1"
 
 # patientName: 患者姓名
 # 若是自己挂号可为空
-patientName: "曹操"
+  patientName: " 曹操 "
+
+# 就诊卡号
+  hospitalCardId: ""
+
+# 医保卡号
+  medicareCardId: ""
+
+# 保险类型
+# 1: 医保
+# 10: 自费
+  reimbursementType: "10"
 
 # doctorName: 医生姓名
 # 不填写的话默认选最好的医生
 # 填写后若这个医生没有号，会自动选其余号中最好的医生
-doctorName: "华佗"
+  doctorName: " 扁鹊 "
 
 # DebugLevel: 调试等级
 # 支持的调试等级有 debug/info/warning/error/critical
 DebugLevel: "info"
 
-#使用ios短信和mac电脑接收验证码
-useIMessage: "false"
+#使用 ios 短信和 mac 电脑接收验证码
+  useIMessage: "false"
 
 # 是否使用 QPython3.6 运行本脚本
-useQPython3: "false"
+  useQPython3: "false"
 ```
 
 ## 文档
@@ -141,6 +152,8 @@ useQPython3: "false"
 感谢 [coeusite](https://github.com/coeusite) 支持android挂号 [pull#56](https://github.com/iBreaker/bjguahao/pull/56)
 
 感谢 [cuteapi](https://github.com/cuteapi) 添加 iphone mac 验证码自动获取的功能，抢号神器哦
+
+感谢 [zzzhouzhong](https://github.com/zzzhouzhong) 更改输入验证码后的确认接口 url。增加就诊卡号、医保卡号、保险类型配置。
 
 若遗漏了您，请发邮件通知我 <791628659@qq.com>
 
